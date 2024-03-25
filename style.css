@@ -1,0 +1,28 @@
+.mapaCundiboyacense {
+  width: 100%;
+  margin: auto;
+}
+
+.mapaCundiboyacense :hover {
+    fill: #8b5220;
+}
+
+.cundinamarca{
+  stroke-width: 0.46875;
+  transform: matrix(0.3, 0, 0, 0.3, 0, 0);
+  fill-opacity: 1;
+  fill: #88a4bc;
+  stroke: #ffffff;
+  
+  
+}
+
+
+.boyaca{
+stroke-width: 0.46875;
+  transform: matrix(0.3, 0, 0, 0.3, 0, 0);
+  fill-opacity: 1;
+  fill: #88a4bc;
+  stroke: #ffffff;
+  
+}
