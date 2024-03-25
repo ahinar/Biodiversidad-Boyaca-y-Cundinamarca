@@ -10,13 +10,14 @@ header{
   
 }
 nav ul {
+  text-align: center;
   list-style: none; /* quitamos los puntos que vienen por defecto en la lista */
   width: 100%;
   margin: 0;
   padding: 0;
 }
 nav li {
-  
+  width: 20%;
   display: inline-block; 
   /* hacemos que los elementos se muestren en línea */
   margin-right: 20px; /* añadimos un margen derecho para separar los elementos */
@@ -39,8 +40,8 @@ h3{
 }
 .containerCundinamarca{
   background-color: #0de5a8;
-   margin: 40px;
-  padding: 50px;
+   margin: 20px 40px;
+  padding: 5px 50px;
 }
 img{
   width: 100%;
