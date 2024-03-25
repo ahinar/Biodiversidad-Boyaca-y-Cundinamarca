@@ -1,3 +1,68 @@
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #14c3a2;
+}
+
+header{
+  background-color: #595b5a;
+  margin: 15px 40px;
+  padding: 10px 20px;
+  
+}
+nav ul {
+  list-style: none; /* quitamos los puntos que vienen por defecto en la lista */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  
+  display: inline-block; 
+  /* hacemos que los elementos se muestren en línea */
+  margin-right: 20px; /* añadimos un margen derecho para separar los elementos */
+}
+nav a {
+  display: block; /* hacemos que los enlaces ocupen todo el espacio disponible */
+  padding: 5px 10px; /* añadimos un padding para hacer el enlace más grande */
+  color: white; /* cambiamos el color del texto */
+  text-decoration: none; /* quitamos la subrayado que viene por defecto en los enlaces */
+}
+nav a:hover {
+  background-color: #14c3a2; /* añadimos un color de fondo cuando pasamos el mouse */
+  color: #fff; /* cambiamos el color del texto cuando pasamos el mouse */
+}
+body header h1{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+.containerCundinamarca{
+  background-color: #0de5a8;
+   margin: 40px;
+  padding: 50px;
+}
+img{
+  width: 100%;
+  
+}
+
+.containerBoyaca{
+  background-color: #7cf49a;
+   margin: 40px;
+  padding: 50px;
+}
+.carousel {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+#imagen {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
 .mapaCundiboyacense {
   width: 100%;
   margin: auto;
