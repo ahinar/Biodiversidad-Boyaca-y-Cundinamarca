@@ -3,9 +3,7 @@ body {
   background-image: url("img/frailejon fondo.png");
 }
 /*estilos del encabezado*/
-div {
-  border: solid black 2px;
-}
+
 header {
   background-image: url("img/header.jpg");
   margin: 15px 40px;
