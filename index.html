@@ -19,65 +19,72 @@ biodiversas.
 • Personalizar el estilo del mapa utilizando CS-->
 
 <body>
+  
   <header>
+    
     <h1 class="tituloPrincipal">Biodiversidad en Cundinamarca y Boyacá.</h1>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="#cundinamarca">Cundinamarca</a></li>
         <li><a href="#boyaca">Boyaca</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
         <li><a href="mapa.html">Mapa</a></li>
         
       </ul>
     </nav>
   </header>
 
-  <section>
-    <div class="containerCundinamarca" id="cundinamarca">
-      <h2>Cundinamarca</h2>
-      <div>
-        <img src="img/cundinamarca.jpg" class="imagenCundinamarca">
-        
-        <p>Cundinamarca es una región de Colombia conocida por su rica biodiversidad, que incluye una variedad de ecosistemas desde los Andes hasta las llanuras del Orinoco. Esta diversidad biológica se manifiesta en la presencia de numerosas especies de flora y fauna, algunas de las cuales son endémicas de la región.<br> Los esfuerzos de conservación son fundamentales para proteger estos recursos naturales únicos, y existen varias iniciativas y parques naturales dedicados a este fin. La biodiversidad de Cundinamarca no solo es vital para el equilibrio ecológico, sino que también es una fuente de orgullo y un elemento clave para el turismo y la educación ambiental en la región.</p>
-      
-      </div >
-      <button onclick="masInfoCundi()">Mas Informacion</button>
-      <button onclick="menosInfoCundi()">Menos Informacion</button>
-      <div id="masInfoCundinamarca""></div>
-      <h3 id="floraCundinamarca"></h3>
-
-      <!--<div id="slideshow-principal">
-        <div id="progress-barcontainer">
-          <div id="progress-bar"></div>
+  <main>
+    <section>
+      <div class="region-container cundinamarca" id="cundinamarca">
+        <h2>Cundinamarca</h2>
+        <div  class="contenidoInfo">
+          <img src="img/cundinamarca.jpg" class="imagenCundinamarca">
           
+          <p class="info">Cundinamarca es una región de Colombia conocida por su rica biodiversidad, que incluye una variedad de ecosistemas desde los Andes hasta las llanuras del Orinoco. Esta diversidad biológica se manifiesta en la presencia de numerosas especies de flora y fauna, algunas de las cuales son endémicas de la región.<br> Los esfuerzos de conservación son fundamentales para proteger estos recursos naturales únicos, y existen varias iniciativas y parques naturales dedicados a este fin. La biodiversidad de Cundinamarca no solo es vital para el equilibrio ecológico, sino que también es una fuente de orgullo y un elemento clave para el turismo y la educación ambiental en la región.</p>
+        
+        </div >
+        <button onclick="masInfoCundi()">Mas Informacion</button>
+        <button onclick="menosInfoCundi()">Menos Informacion</button>
+        <div id="masInfoCundinamarca">
+          <h3 id="flora-cundinamarca"></h3>
+  
+        
+  
+        <p id= "info-cundinamarca"></p>
         </div>
-        <div id="slideshow">
-          <img src="" alt="" id="img1">
-          <img src="" alt="" id="img2">
-        </div>
-        <div id="indicadores">
+        
+  
+      </div>
+    </section>
+  
+    <section>
+      <div class="region-container boyaca" id="boyaca">
+        <h2>Boyacá</h2>
+        <div  class="contenidoInfo">
+            <p class="info">Boyacá es un departamento de Colombia que se destaca por su rica biodiversidad. Según datos recientes, Boyacá alberga más de 11,731 especies observadas, lo que representa aproximadamente el 15% de las especies registradas en todo el país. De estas, más de 1,036 son endémicas, lo que significa que no se encuentran en ningún otro lugar del mundo. <br> Este departamento no solo es vital para la conservación de la flora y fauna colombiana, sino que también es un ejemplo del compromiso con la gestión del conocimiento sobre la biodiversidad, apoyando la construcción de políticas ambientales y la toma de decisiones a nivel regional y nacional.</p>
+            <img src="img/agulila crestada.jpg" class="imagenCundinamarca">
+          </div>
+        <button onclick="masInfoBoyaca()">Mas Informacion</button>
+        <button onclick="menosInfoBoyaca()">Menos Informacion</button>
+        <h3 id="flora-boyaca"></h3>
+        
+        <p id= "info-boyaca">
+          
+        </p>
+  
+      </div>
+    </section>
+  </main>
 
-        </div>
-      </div> -->
-
-      <p id= "infoCundinamarca"></p>
-
-    </div>
-  </section>
-
-  <section>
-    <div class="containerBoyaca" id="boyaca">
-      <h2>Boyacá</h2>
-      <p>Boyacá es un departamento de Colombia que se destaca por su rica biodiversidad. Según datos recientes, Boyacá alberga más de 11,731 especies observadas, lo que representa aproximadamente el 15% de las especies registradas en todo el país. De estas, más de 1,036 son endémicas, lo que significa que no se encuentran en ningún otro lugar del mundo.  Este departamento no solo es vital para la conservación de la flora y fauna colombiana, sino que también es un ejemplo del compromiso con la gestión del conocimiento sobre la biodiversidad, apoyando la construcción de políticas ambientales y la toma de decisiones a nivel regional y nacional.</p>
-
-      <button onclick="masInfoBoyaca()">Mas Informacion</button>
-      <button onclick="menosInfoBoyaca()">Menos Informacion</button>
-      <h3 id="floraBoyaca"></h3>
+  
+    <footer>
       
-      <p id= "infoBoyaca"></p>
-
-    </div>
-  </section>
+      <p class="copyright">  Desarrollado por Ahinar Fernado Gonzalez<br>AhinarDev<br>Copyright &copy 2024</p>
+  </footer>
+  
+  
   
 <script src="script.js"></script>
 
