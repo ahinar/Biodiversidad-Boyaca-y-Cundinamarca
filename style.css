@@ -7,7 +7,7 @@ div {
   border: solid black 2px;
 }
 header {
-  background-image: url("/img/header.jpg");
+  background-image: url("img/header.jpg");
   margin: 15px 40px;
   padding: 10px 20px;
   color: #fff;
