@@ -12,6 +12,7 @@ header {
 }
 
 .tituloPrincipal {
+  font-size: 30px;
   -webkit-text-stroke: 1px black;
 }
 
@@ -192,6 +193,20 @@ footer {
   color: white;
 }
 
+.titulo-galeria h2{
+  text-align: center;
+  color: #14c3a2;
+  -webkit-text-stroke: 1px white;
+}
+
+.titulo-galeria p{
+  text-align: center;
+  color: #14c3a2;
+  -webkit-text-stroke: 1px black;
+}
+
+
+/*diseño responsivo*/
 @media screen and (max-width: 480px) {
   h1 {
     text-align: center;
