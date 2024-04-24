@@ -26,3 +26,4 @@ function limpiarInformacion(floraId, infoId) {
   document.querySelector(floraId).innerHTML = "";
   document.querySelector(infoId).innerHTML = "";
 }
+

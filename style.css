@@ -249,12 +249,42 @@ footer {
     display: block;
   }
 
-  #masInfoBoyaca, #masInfoCundinamarca{
-font-size: small;
+  
   }
   figcaption {
     font-size: smaller;
   }
+
+  button{
+    margin: 10px;
+      background: #1E62D0;
+      
+      
+      border-radius: 20px;    
+      color: #FFFFFF;
+      font-family: Brush Script MT;
+      width: 240px;
+      font-size: 20px;
+      font-weight: 100;
+      padding: 4px;
+      border: solid #337FED 1px;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+   }
+   
+   button:hover {
+      border: solid #337FED 1px;
+      background: #75bd58;
+      width: 250px;
+     color: #337FED;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      transition: 0.8ms;
+   }
 }
 
 @media screen and (max-width: 920px) {
