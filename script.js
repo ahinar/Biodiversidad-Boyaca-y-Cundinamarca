@@ -1,5 +1,9 @@
+
 function masInfoCundi() {
-  mostrarInformacion("#flora-cundinamarca", "#info-cundinamarca", "Especies de flora y Fauna de Cundinamarca", "Cundinamarca es hogar de una impresionante diversidad de especies, incluyendo frailejones y bromelias en sus páramos, y cóndores que surcan los cielos de estas alturas. En los humedales de la sabana, se pueden encontrar tinguas y alcaravanes, mientras que las montañas neblinosas albergan osos de anteojos, dantas y venados. Además, las arenas blancas del río Magdalena son el hábitat de tortugas charapas y babillas. La región también se enorgullece de tener 87 tipos de orquídeas y 83 de colibríes, demostrando la riqueza natural de Cundinamarca.");
+  mostrarInformacion("#flora-cundinamarca", "#info-cundinamarca", 
+  "Especies de flora y Fauna de Cundinamarca", 
+  "Cundinamarca es hogar de una impresionante diversidad de especies,",
+  "incluyendo frailejones y bromelias en sus páramos, y cóndores que surcan los cielos de estas alturas. En los humedales de la sabana, se pueden encontrar tinguas y alcaravanes, mientras que las montañas neblinosas albergan osos de anteojos, dantas y venados. Además, las arenas blancas del río Magdalena son el hábitat de tortugas charapas y babillas. La región también se enorgullece de tener 87 tipos de orquídeas y 83 de colibríes, demostrando la riqueza natural de Cundinamarca.");
 }
 
 function masInfoBoyaca() {
@@ -27,3 +31,72 @@ function limpiarInformacion(floraId, infoId) {
   document.querySelector(infoId).innerHTML = "";
 }
 
+//************************************************************** */
+const icono = document.querySelector('#icono');
+const icono2 = document.querySelector('#icono2');
+const tooltip = document.querySelector('#tooltip');
+const tooltip2 = document.querySelector('#tooltip2');
+
+const calcularPosicionTooltip = () => {
+	// Calculamos las coordenadas del icono.
+	const x = icono.offsetLeft;
+	const y = icono.offsetTop;
+	const x1 = icono2.offsetLeft;
+	const y1 = icono2.offsetTop;
+
+	// Calculamos el tamaño del tooltip.
+	const anchoTooltip = tooltip.clientWidth;
+	const altoTooltip = tooltip.clientHeight;
+	const anchoTooltip2 = tooltip.clientWidth;
+	const altoTooltip2 = tooltip.clientHeight;
+
+	// Calculamos donde posicionaremos el tooltip.
+	const izquierda = x - (anchoTooltip / 2) + 8;
+	const arriba = y - altoTooltip - 20;
+	const izquierda2 = x1 - (anchoTooltip2 / 2) + 8;
+	const arriba2 = y1 - altoTooltip2 -30;
+
+	tooltip.style.left = `${izquierda}px`;
+	tooltip.style.top = `${arriba}px`;
+	tooltip2.style.left = `${izquierda2}px`;
+	tooltip2.style.top = `${arriba2}px`;
+};
+
+window.addEventListener('load', () => calcularPosicionTooltip());
+window.addEventListener('resize', () => calcularPosicionTooltip());
+
+icono.addEventListener('mouseenter', () => {
+	tooltip.classList.add('activo');
+	calcularPosicionTooltip();
+
+
+});
+
+icono2.addEventListener('mouseenter', () => {
+	
+	tooltip2.classList.add('activo');
+	calcularPosicionTooltip();
+
+
+});
+
+let timer;
+icono.addEventListener('mouseleave', () => {
+	timer = setTimeout(() => {
+		tooltip.classList.remove('activo');
+		tooltip2.classList.remove('activo');
+	}, 500);
+});
+
+
+icono2.addEventListener('mouseleave', () => {
+	timer = setTimeout(() => {
+		tooltip.classList.remove('activo');
+		tooltip2.classList.remove('activo');
+	}, 500);
+});
+
+tooltip.addEventListener('mouseenter', () => clearTimeout(timer));
+tooltip.addEventListener('mouseleave', () => tooltip.classList.remove('activo'));
+tooltip2.addEventListener('mouseenter', () => clearTimeout(timer));
+tooltip2.addEventListener('mouseleave', () => tooltip2.classList.remove('activo'));
