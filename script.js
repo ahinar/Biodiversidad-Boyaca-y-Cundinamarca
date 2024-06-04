@@ -1,9 +1,6 @@
 
 function masInfoCundi() {
-  mostrarInformacion("#flora-cundinamarca", "#info-cundinamarca", 
-  "Especies de flora y Fauna de Cundinamarca", 
-  "Cundinamarca es hogar de una impresionante diversidad de especies,",
-  "incluyendo frailejones y bromelias en sus páramos, y cóndores que surcan los cielos de estas alturas. En los humedales de la sabana, se pueden encontrar tinguas y alcaravanes, mientras que las montañas neblinosas albergan osos de anteojos, dantas y venados. Además, las arenas blancas del río Magdalena son el hábitat de tortugas charapas y babillas. La región también se enorgullece de tener 87 tipos de orquídeas y 83 de colibríes, demostrando la riqueza natural de Cundinamarca.");
+  mostrarInformacion("#flora-cundinamarca", "#info-cundinamarca",   "Especies de flora y Fauna de Cundinamarca",   "Cundinamarca es hogar de una impresionante diversidad de especies, incluyendo frailejones y bromelias en sus páramos, y cóndores que surcan los cielos de estas alturas. En los humedales de la sabana, se pueden encontrar tinguas y alcaravanes, mientras que las montañas neblinosas albergan osos de anteojos, dantas y venados. Además, las arenas blancas del río Magdalena son el hábitat de tortugas charapas y babillas. La región también se enorgullece de tener 87 tipos de orquídeas y 83 de colibríes, demostrando la riqueza natural de Cundinamarca.");
 }
 
 function masInfoBoyaca() {

@@ -43,6 +43,7 @@ nav a:hover {
   background-color: #14c3a2; /* añadimos un color de fondo cuando pasamos el mouse */
   color: #fff; /* cambiamos el color del texto cuando pasamos el mouse */
 }
+
 body header h1 {
   text-align: center;
 }
@@ -109,6 +110,37 @@ button{
     text-decoration: none;
     transition: 0.8ms;
  }
+
+/*estilo pagina avistamientos*/
+
+/* Contenedor principal que organizará las especies en una cuadrícula */
+#especie {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+  gap: 20px; /* Espacio entre las columnas y filas */
+}
+
+/* Cada contenedor de especie */
+.especieContainer {
+  background: #75bd58;
+  display: flex;
+  align-items: center; /* Centra los elementos hijos verticalmente */
+  padding: 10px;
+}
+
+/* Contenedor de la lista */
+.listaContainer {
+  flex: 1; /* Ocupa todo el espacio disponible para la lista */
+}
+
+/* Estilo de la imagen */
+.imagenEspecie {
+  max-width: 150px; /* Ajusta el tamaño según sea necesario */
+  width: auto; /* Mantiene la proporción de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-left: 20px; /* Espacio entre la lista y la imagen */
+}
+
 
 
 /*estilo pagina mapa*/
