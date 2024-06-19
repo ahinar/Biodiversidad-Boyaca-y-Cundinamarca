@@ -39,7 +39,7 @@ while True:
         "Tipo": tipoEspecie,
         "Nombre comun": nombre,
         "Nombre cientifico": cientifico,
-        "Habitat o  lugar de avistamiento": habi,
+        "Habitat": habi,
         "Latitud": lat,
         "Longitud": longi,
         "Altitud": altura,

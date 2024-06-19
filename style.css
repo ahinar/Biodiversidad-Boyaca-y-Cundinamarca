@@ -1,6 +1,8 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   background-image: url("img/frailejon fondo.png");
+  
+  
 }
 /*estilos del encabezado*/
 
@@ -49,14 +51,22 @@ body header h1 {
 }
 
 /*estilos del main*/
+
+p {
+  font-size: 20px; /* Tamaño para párrafos */
+  margin-bottom: 15px; /* Margen inferior común para párrafos */
+}
 h2 {
+  color: white; 
+  background-color: #0de5a8;  
   text-align: center;
   font-size: 24px;
 }
 .region-container {
   border-radius: 6px;
   margin: 20px 40px;
-  padding: 5px 50px;
+  padding: 20px; /* Aumenta el padding para un relleno uniforme */
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total del elemento */
 }
 
 
@@ -72,8 +82,8 @@ h2 {
 .contenidoInfo {
   display: inline-flex;
 }
-img {
-  width: 50%;
+.contenidoInfo img {
+  width: 25%;
   border-radius: 7px;
 }
 
@@ -146,9 +156,12 @@ button{
 /*estilo pagina mapa*/
 
 .mapaCundiboyacense {
-  width: 100%;
-  margin: auto;
+  max-width: 95%;
+  justify-content: center;
+  align-items: center;
+  
 }
+
 
 .mapaCundiboyacense :hover {
   fill: #8b5220;
@@ -311,6 +324,7 @@ figure .icono2{
 }
 
 .gallery figcaption {
+  font-size: 16px;
   display: none;
   position: absolute;
   color: white;
@@ -336,15 +350,55 @@ footer {
 }
 
 .titulo-galeria h2{
+  margin: auto ;
+  margin-bottom: 10px;
+  width: 80%;
   text-align: center;
-  color: #14c3a2;
-  -webkit-text-stroke: 1px white;
+  color: white;
+  
 }
 
 .titulo-galeria p{
+  width: 50%;
+  margin: auto;
   text-align: center;
-  color: #14c3a2;
-  -webkit-text-stroke: 1px black;
+  color:white;
+  background-color: #0de5a8;
+  
+}
+
+.graficos h2 {
+
+  margin:auto ;
+  width: 80%;
+  text-align: center;
+  margin-top:20px ;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+ 
+}
+
+table h4 {
+  
+  width: 70%;
+  color: white; 
+  background-color: #0de5a8;  
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  
+}
+
+table img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+ 
+  
 }
 
 
